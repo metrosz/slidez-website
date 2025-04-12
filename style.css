@@ -1,1 +1,100 @@
+:root {
+  --bg: #0e0e0e;
+  --text: #e0e0e0;
+  --accent: #00ffc8;
+  --card: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--accent);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.feature-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h2 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta input {
+  padding: 0.7rem;
+  width: 250px;
+  border-radius: 0.5rem;
+  border: none;
+  margin-right: 0.5rem;
+  outline: none;
+}
+
+.cta button {
+  padding: 0.7rem 1rem;
+  background: var(--accent);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
